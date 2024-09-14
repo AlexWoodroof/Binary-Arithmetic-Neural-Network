@@ -1,13 +1,11 @@
 import numpy as np
 
-# ReLU function and its derivative
 def relu(x):
     return np.maximum(0, x)
 
 def relu_derivative(x):
     return np.where(x > 0, 1, 0)
 
-# Sigmoid function and its derivative
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
@@ -46,7 +44,7 @@ target_output = np.array(target_output)
 
 # Initialize network parameters
 input_size = n_bits * 2
-hidden_size = 64  # Increased the number of neurons in the hidden layer
+hidden_size = 64
 output_size = n_bits + 1  # Output has an extra bit for possible carry
 
 weights_input_hidden = 2 * np.random.random((input_size, hidden_size)) - 1
@@ -88,7 +86,7 @@ for epoch in range(epochs):
         error = np.mean(np.abs(target_output - predicted_output))
         print(f'Epoch {epoch}, Error: {error}')
 
-# Test the model
+# Test the model n times
 def test_model():
     num1 = np.random.randint(0, max_number)
     num2 = np.random.randint(0, max_number)
