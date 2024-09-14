@@ -14,6 +14,8 @@ So what is a neural network? A neural network is a series of algorithms intended
 When a neural network processes information, it does so in a step-by-step manner (forward propagation). Here's how it works:
 - The input Layer: This is where the data enters the network. In this case, the two binary numbers.
 - The Hidden Layer: The processing layer if you will, responsible for making weighted calculations, helping the NN understand the relationship between the numbers.
+  - ReLU is a function that helps a neural network decide which neurons to activate. It works like a filter that only lets through positive values and blocks out any negative ones. In simple terms, ReLU helps the network focus on useful information and ignore the rest.
+  - The Sigmoid function takes any number and squashes it into a value between 0 and 1. Think of it as a way to convert raw data into something more manageable, like a probability. It’s like a switch that helps the network decide whether a neuron should be on (close to 1) or off (close to 0).
 - The Output Layer: Finally, the networks spits out a prediction or decision based on what it has inferred.
 
 Once the network has made its prediction, it checks to see if it got it right. If it’s wrong, the network learns from its mistake using backward propagation. Here's how it works:
