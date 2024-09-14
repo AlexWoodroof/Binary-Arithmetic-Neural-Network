@@ -26,7 +26,7 @@ This repository contains a simple neural network implementation designed to perf
 
 - **Input layer**: 16 neurons (two 8-bit numbers concatenated).
 - **Hidden layer**: 64 neurons, with ReLU activation.
-- **Output layer**: 9 neurons (sum of two 8-bit numbers, with one extra bit for carry), using sigmoid activation.
+- **Output layer**: 9 neurons (sum of two 8-bit numbers, with one extra bit for carry).
 
 ### Hyperparameters
 
