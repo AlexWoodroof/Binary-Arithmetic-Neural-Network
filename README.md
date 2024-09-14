@@ -3,6 +3,25 @@
 
 This repository contains a simple neural network implementation designed to perform binary addition. The neural network takes two n-bit binary numbers as input, adds them, and outputs the binary sum. We are using 8 bit for the case of simplicity and functionality (not looked at higher numbers).
 
+So what is a neural network? A neural network is a series of algorithms intended to recognise patterns designed to mimic how the brain works. Just like children learn to identify numbers - they don't get it straight away but through iteration and correction they begin to learn. As is the same with a neural network - it takes inputs, makes it's guess and then told when it's correct or incorrect. 
+
+<div align=center>
+  
+  ![image](https://github.com/user-attachments/assets/edc04160-600c-4222-9137-d67c30ea74d2)
+  
+  </div>
+
+When a neural network processes information, it does so in a step-by-step manner (forward propagation). Here's how it works:
+- The input Layer: This is where the data enters the network. In this case, the two binary numbers.
+- The Hidden Layer: The processing layer if you will, responsible for making weighted calculations, helping the NN understand the relationship between the numbers.
+- The Output Layer: Finally, the networks spits out a prediction or decision based on what it has inferred.
+
+Once the network has made its prediction, it checks to see if it got it right. If it’s wrong, the network learns from its mistake using backward propagation. Here's how it works:
+- The network calculates how far off its prediction was from the correct answer (called the error - seen in the results further down the page).
+- It then adjusts the weights (the numbers it uses to process the data) to make a better guess next time. This process is repeated multiple times, making the network more accurate, essentially learning.
+
+In short, forward propagation is about making a prediction, and backward propagation is how the network learns and improves. This cycle allows neural networks to solve complex problems like recognizing images, understanding speech, etc...
+
 ## Code Overview
 
 ### Functions
